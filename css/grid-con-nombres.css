@@ -1,0 +1,17 @@
+@import url(style.css);
+
+.grip-con-nombres{
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: [linea-c1] 1fr [linea-c2] 1fr [linea-c3] 1fr [linea-c4];
+  grid-template-rows: [linea-r1] 1fr [linea-r2] 1fr [linea-r3] 1fr [linea-r4];
+
+}
+
+.item:nth-child(4){
+  background-color: brown;
+  color: white;
+  grid-column: linea-c1/linea-c3;
+  grid-row: linea-r2/linea-r4;
+}

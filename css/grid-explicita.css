@@ -1,0 +1,7 @@
+@import url(style.css);
+
+.grid-explicita{
+  display: grid;
+  grid-template-rows: 150px 200px 75px;
+  grid-template-columns: 210px 180px 400px;
+}

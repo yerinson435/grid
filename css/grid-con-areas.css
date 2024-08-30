@@ -1,0 +1,26 @@
+@import url(style.css);
+
+
+.grid-areas{
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 60px 1fr;
+  grid-template-areas: 
+  'header header'
+  'sidebar content';
+}
+
+.header{
+  grid-area: header;
+  background-color: brown;
+}
+
+.sidebar{
+  grid-area: sidebar;
+  background-color: steelblue;
+}
+
+.content{
+  grid-area: content;
+  background-color: blueviolet;
+}
