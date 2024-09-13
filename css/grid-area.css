@@ -1,0 +1,37 @@
+body{
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 100px 1fr;
+  grid-template-areas:
+  'header header header header header header'
+  '. siderbar-left container container sidebar-rigth .';
+}
+
+.header{
+  grid-area: header;
+  background-color: brown;
+}
+
+.siderbar-left{
+  grid-area: siderbar-left;
+  background-color: antiquewhite;
+}
+
+.container{
+  grid-area: container;
+  background-color: red;
+}
+
+.sidebar-rigth{
+  grid-area: sidebar-rigth;
+  background-color: antiquewhite;
+}
+

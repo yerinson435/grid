@@ -1,10 +1,11 @@
 @import url(style.css);
 
 
-.grid-areas{
+.contenedor{
+  height: 100vh;
   display: grid;
   grid-template-columns: 200px 1fr;
-  grid-template-rows: 60px 1fr;
+  grid-template-rows: 60px 1fr ;
   grid-template-areas: 
   'header header'
   'sidebar content';
@@ -12,15 +13,15 @@
 
 .header{
   grid-area: header;
-  background-color: brown;
+  background-color: rgb(43, 43, 43);
 }
 
 .sidebar{
   grid-area: sidebar;
-  background-color: steelblue;
+  background-color: rgb(85, 85, 85);
 }
 
 .content{
   grid-area: content;
-  background-color: blueviolet;
+  background-color: rgb(13, 12, 14);
 }
